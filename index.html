@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/army_anticlan_logo.png">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>疫世界</title>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-sm navbar-light bg-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./image/army_anticlan_logo.png" alt="">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navtoggle">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#virus">病毒資訊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shop">防疫物資</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carousel" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./image/S1s.jpg" class="vh-100 w-100 object-cover" alt="">
+                    <div class="carousel-caption a d-md-block">
+                        <h3 class="py-2">疫起來守護</h3>
+                        <p class="d-none d-md-block py-4">本網站為您<span class="text-orange-2">堤共最新防疫訊息</span>讓我們一起為健康共創美好
+                        </p>
+                        <p class="d-block d-md-none">本網站為您<span
+                                class="text-orange-2">堤共最新防疫訊息</span>讓我們一起為健康共創美好守護家園戰勝病毒</p>
+                        <a href="#about" class="btn btn-outline-light rounded-5 m-2 px-3 py-2">了解更多</a>
+                        <table class="d-flex justify-content-center">
+                            <tbody>
+                                <tr>
+                                    <th class="p-1">瀏覽人數</th>
+                                    <th class="p-1">參與率</th>
+                                    <th class="p-1">分享率</th>
+                                </tr>
+                                <tr>
+                                    <td><em class="people"></em></td>
+                                    <td><em class="join"></em></td>
+                                    <td><em class="share"></em></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mask"></div>
+                    <img src="./image/S2ss.jpg" class="vh-100 w-100 object-cover" alt="">
+                    <div class="carousel-caption b d-md-block">
+                        <h3 class="text-blue-2 py-2">病毒來攪局</h3>
+                        <p class="d-none d-md-block py-4">流行病毒<span class="text-orange-2">WH-78
+                                病毒</span>來襲近期請做好個人防疫措施勤洗手<br>外出配戴口罩以避免感染</p>
+                        <p class="d-block d-md-none">流行病毒<span class="text-orange-2">WH-78
+                                病毒</span>來襲近期請做好個人防疫措施勤洗手外出配戴口罩以避免感染</p>
+                        <a href="#about" class="btn btn-light rounded-5 m-2 px-3 py-2">了解更多</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mask"></div>
+                    <img src="./image/S3.jpg" class="vh-100 w-100 object-cover" alt="">
+                    <div class="carousel-caption c d-md-block">
+                        <h3>專業研發</h3>
+                        <p>本團隊<span class="text-orange-2">提供最新疫苗</span>，抵制WH-78病毒歡迎預約施打</p>
+                        <a href="#about" class="btn btn-outline-light rounded-5 m-2 px-3 py-2">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <img src="./image/wave.png" class="position-absolute bottom-0" alt="">
+        <section id="about">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-lg-6 col-12">
+                        <div id="aboutSlide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="./image/about-a.jpg" class="w-100 object-cover" height="400" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./image/about-b.jpg" class="w-100 object-cover" height="400" alt="">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./image/about-c.jpg" class="w-100 object-cover" height="400" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <h2 class="about-title px-3 py-4 wow">關於我們</h2>
+                        <p class="about-para p-3 wow">
+                            作為全世界第一名榜樣，曾經實現過能穩定控制住病毒的傳染疫情的國家。台灣在數年前以超高資訊能力應對了生化病毒C-20的襲擊，當時集合了臺灣的自由軟體程式設計師及聯合臺灣駭客(Hacker)團體建立線上資訊平台與線下調度通路，打了一場紮實的勝仗，記下了台灣在世界歷史上的一筆紀錄。
+                        </p>
+                    </div>
+                </div>
+                <div class="row pt-5 justify-content-center g-4">
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.8s">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="about-card rounded-4">
+                            <div class="m-3 p-4">
+                                <h3 class="text-orange-3 pt-4 pb-3 fw-bold">正確資訊</h3>
+                                <p>本網站提供政府給予最新資訊確保防疫資訊無落差</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <i class="fa-regular fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <div class="m-3 p-4">
+                                <h3 class="text-orange-3 pt-4 pb-3 fw-bold">團隊研發</h3>
+                                <p>結合政府醫院一起研發新型疫苗對抗WH-78病毒</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1.2s">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <div class="m-3 p-4">
+                                <h3 class="text-orange-3 pt-4 pb-3 fw-bold">團隊陣容</h3>
+                                <p>集結醫療及科技業IT人才打造資訊整合網站</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1.4s">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <i class="fa-solid fa-syringe"></i>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <div class="m-3 p-4">
+                                <h3 class="text-orange-3 pt-4 pb-3 fw-bold">疫苗種類</h3>
+                                <p>目前各地方醫院有WH疫苗新型WH-2仍在實驗階段</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="container">
+                <h2 class="text-center news-title px-3 py-4 wow fw-bold">最新消息</h2>
+                <div class="row pt-3 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="news-text-box d-none d-md-block p-4 pt-lg-5">
+                            <h3 class="news-title wow">疫世界提供您最新消息</h3>
+                            <p class="w-100 p-0 p-lg-4 news-para wow">
+                                本網站結合疾病特案CAA管制署、美國CDC疾管局、BSN疾病管理局、臨床病學史、綜合外媒報導等各大資訊平台整合後，提供最新資訊及正確防疫觀念給所需的人
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="news" class="carousel slide carousel-fade overflow-hidden carousel-shadow"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="image/N1.jpg" height="420" class="w-100 object-cover d-block"
+                                        alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/N2.jpg" height="420" class="w-100 object-cover d-block"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="image/N3.jpg" height="420" class="w-100 object-cover d-block"
+                                        alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3 align-items-center">
+                    <div class="col-md-12">
+                        <div id="newslide" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#newslide" data-bs-slide-to="0" class="active" aria-current="true"
+                                    aria-label="First slide"></li>
+                                <li data-bs-target="#newslide" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-6 p-3">
+                                            <div class="single-box">
+                                                <div class="single-text shadow-sm">
+                                                    <h3>病毒資訊</h3>
+                                                    <p>⽬前患者表現出的症狀像是綜合了多種疾病，但傳染病會有潛伏期，不會立即發作，此疾卻如喪屍般發病的速度非常快</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 p-3">
+                                            <div class="single-box">
+                                                <div class="single-text shadow-sm">
+                                                    <h3>注意健康</h3>
+                                                    <p>病毒若從傷⼝感染，發病時間縮短⾄⼀天以內，發病後走路歪歪斜斜、腰背反折如⼸：肌⾁因痙攣⽽失去協調⼒及平衡⼒</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-6 p-3">
+                                            <div class="single-box">
+                                                <div class="single-text shadow-sm">
+                                                    <h3>治療方法</h3>
+                                                    <p>⽬前所有的冠狀病毒並無特定推薦的治療⽅式，多為採⽤⽀持性療法SARS流⾏期間有許多抗病毒藥物被使⽤治療病患，效果均未被確認。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 p-3">
+                                            <div class="single-box">
+                                                <div class="single-text shadow-sm">
+                                                    <h3>注意健康</h3>
+                                                    <p>病毒若從傷⼝感染，發病時間縮短⾄⼀天以內，發病後走路歪歪斜斜、腰背反折如⼸：肌⾁因痙攣⽽失去協調⼒及平衡⼒。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="virus">
+            <div class="container">
+                <h2 class="text-center p-3 fw-bold">病毒資訊</h2>
+                <div class="row pt-4 justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h3 class="text-[1.4em]">病毒如何傳播？</h3>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            ⽬前對 WH78 星狀變異病毒的完整傳播途徑，尚未完全瞭解。當 2020
+                                            年鄰國不明原因肺炎疫情發⽣時，案例多數曾⾄有賣野味的華南海鮮市場活動，環境檢體雖檢出
+                                            CO-20冠狀病毒，但感染源仍無法釐清。除此，從發病個案的流⾏病學資訊來看，亦有家庭群聚與醫護⼈員感染的個案報告，因此⾼度懷疑可藉由近距離⾶沫、直接或間接接觸病⼈的⼝⿐分泌物或體液⽽增加⼈傳⼈之感染風險。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h3 class="text-[1.4em]">WH-78變異病毒在哪裡傳播？</h3>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>除了三年前發現病毒的鄰國湖北省武漢市以外，中國其他省市也陸續淪陷，如北京、天津、上海還有廣東等地。此外，其他國家與地區，如港澳、⽇本、泰國、南韓，和美國也有發現確認感染。這些亡者⼤多曾在武漢旅遊或居住。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <h3 class="text-[1.4em]">什麼是星狀病毒？</h3>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>星狀病毒（Star-virus）為具三層外套膜（envelope）的病毒，抽取亡者的樣本檢驗在電⼦顯微鏡下可看到類似星狀的外輪突起因此命名。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <h3 class="text-[1.4em]">感染 WH-78 病毒如何治療?</h3>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>如有於 2 年間注射 CO-20 疫苗者，推測可降低感染，⽬前 WH-78 尚無解⽅。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="./image/chart.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shop" class="h-100">
+            <div class="container">
+                <h2 class="text-center h2 p-3 fw-bold text-mediun-green">防疫物資</h2>
+                <div class="row p-0">
+                    <div class="col-lg-4 col-md-6 col-12" v-for="product,idx in products">
+                        <div class="p-2">
+                            <div class="rounded-2 shadow-lg">
+                                <div class="p-3">
+                                    <div class="relative">
+                                        <img :src="product.img" class="w-100 h-[260px] object-cover" alt="">
+                                    </div>
+                                    <div class="flex justify-content-between align-items-center pt-5">
+                                        <h4 class="text-center text-[20px]">{{product.title}}</h4>
+                                        <h5 class="text-danger">${{product.price}}</h5>
+                                        <button class="btn btn-green-spical" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop" @click="plus(product)">加入購物車</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-center h2 p-3 fw-bold text-mediun-green">聯絡我們</h2>
+                <div class="row align-items-center">
+                    <div class="row  pt-[100px] text-white">
+                        <div class="col-lg-6 pt-3">
+                            <div class="flex justify-content-evenly align-items-center">
+                                <label for="name" class="text-[22px]">
+                                    姓名:
+                                </label>
+                                <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]"
+                                    placeholder="請輸入姓名">
+                            </div>
+                            <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                                <label for="name" class="text-[22px]">
+                                    手機:
+                                </label>
+                                <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]"
+                                    placeholder="請輸入手機">
+                            </div>
+                            <div class="flex justify-content-evenly align-items-center pt-[60px]">
+                                <label for="name" class="text-[22px]">
+                                    Mail:
+                                </label>
+                                <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]"
+                                    placeholder="請輸入E-mail">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="flex justify-content-evenly align-items-start pt-3">
+                                <label for="text" class="text-[22px]">
+                                    留言:
+                                </label>
+                                <textarea id="text"
+                                    class="w-[250px] h-[200px] lg:w-[500px] lg:h-[300px] form-control rounded-4 p-3"
+                                    placeholder="請輸入您的留言"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-content-center mt-5">
+                        <button class="btn btn-lg px-5 btn-outline-primary rounded-pill submit" data-bs-toggle="modal"
+                            data-bs-target="#submit">送出留言</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="chat-ico">
+            <i class="fa-solid fa-comment-dots"></i>
+        </div>
+        <div id="chat">
+            <div class="chat-box" ref="chat">
+                <div class="reply">Hi 歡迎來到疫世界</div>
+                <template v-for="(inp,idx) in input">
+                    <div class="input d-flex justify-content-end">
+                        <span class="p-2">{{inp}}</span>
+                    </div>
+                    <div class="reply">
+                        {{reply[(idx+1) % 3]}}
+                    </div>
+                </template>
+            </div>
+            <div class="flex justify-content-between">
+                <input type="text" class="form-control m-1" v-model="chat" @keyup.prevent.enter="go()"
+                    placeholder="請書入您的問題">
+                <input type="submit" class="btn btn-primary m-1" value="送出" @click.prevent="go()">
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="submitLabel">已送出</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        資料送出成功，感謝您的留言疫世界會盡快回復您!!!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger text-black" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">購物車</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="flex">
+                            <div class="col-4">
+                                <h3 class="p-2">品名</h3>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="p-2">金額</h3>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="p-2">數量</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <template v-for="product,idx in products">
+                            <div class="flex justify-content-between items-center">
+                                <h3 class="py-2">{{product.title}}</h3>
+                                <div class="flex justify-content-around items-center text-[20px]">
+                                    <span>{{sub[idx]}}元</span>
+                                    <i class="fa-solid fa-circle-minus cursor-pointer text-dark-green"
+                                        @click="minus(product)"></i>
+                                    <input type="text" class="form-control w-25 m-2" v-model="product.amountShow">
+                                    <i class="fa-solid fa-circle-plus cursor-pointer text-dark-green"
+                                        @click="plus(product)"></i>
+                                </div>
+                            </div>
+                        </template>
+                        <div class="flex p-2">
+                            <input type="text" class="w-50 form-control m-2" placeholder="請輸入姓名">
+                            <input type="text" class="w-50 form-control m-2" placeholder="請輸入地址">
+                        </div>
+                        <div class="text-right text-danger text-[20px]">總共{{total}}元</div>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="button" class="btn btn-primary clearcart">確認送出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/vue-global.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/wow.min.js"></script>
+<script src="./js/all.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
