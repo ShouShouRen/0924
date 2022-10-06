@@ -490,10 +490,10 @@
                                 <h5 class="py-2">{{product.title}}</h5>
                                 <div class="d-flex justify-content-around align-items-center text-[20px]">
                                     <span>{{sub[idx]}}元</span>
-                                    <i class="fa-solid fa-circle-minus cursor-pointer text-dark-green"
+                                    <i class="fa-solid fa-circle-minus text-blue-4 cursor-pointer"
                                         @click="minus(product)"></i>
                                     <input type="text" class="form-control w-25 m-2" v-model="product.amountShow">
-                                    <i class="fa-solid fa-circle-plus cursor-pointer text-dark-green"
+                                    <i class="fa-solid fa-circle-plus text-blue-4 cursor-pointer"
                                         @click="plus(product)"></i>
                                 </div>
                             </div>
@@ -502,7 +502,7 @@
                             <input type="text" class="w-50 form-control m-2" placeholder="請輸入姓名">
                             <input type="text" class="w-50 form-control m-2" placeholder="請輸入地址">
                         </div>
-                        <div class="text-right text-danger text-[20px]">總共{{total}}元</div>
+                        <div class="text-right text-danger">總共{{total}}元</div>
                     </div>
                     <div class="modal-footer">
                         <div>
