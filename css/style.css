@@ -13010,14 +13010,16 @@ nav a img {
 #shop h2::first-letter, #shop .h2::first-letter {
   font-size: 1.6em;
 }
-#shop .shop-card .img-box {
-  overflow: hidden;
+#shop .col-lg-4 {
   cursor: pointer;
 }
-#shop .shop-card .img-box:hover img {
+#shop .col-lg-4:hover img {
   overflow: hidden;
   transform: scale(1.2);
   transition: all 0.4s ease;
+}
+#shop .shop-card .img-box {
+  overflow: hidden;
 }
 #shop::before {
   content: "";

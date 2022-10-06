@@ -472,7 +472,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="flex">
+                        <div class="d-flex">
                             <div class="col-4">
                                 <h3 class="p-2">品名</h3>
                             </div>
@@ -485,9 +485,9 @@
                         </div>
                         <hr>
                         <template v-for="product,idx in products">
-                            <div class="flex justify-content-between items-center">
+                            <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="py-2">{{product.title}}</h3>
-                                <div class="flex justify-content-around items-center text-[20px]">
+                                <div class="d-flex justify-content-around align-items-center text-[20px]">
                                     <span>{{sub[idx]}}元</span>
                                     <i class="fa-solid fa-circle-minus cursor-pointer text-dark-green"
                                         @click="minus(product)"></i>
@@ -497,7 +497,7 @@
                                 </div>
                             </div>
                         </template>
-                        <div class="flex p-2">
+                        <div class="d-flex p-2">
                             <input type="text" class="w-50 form-control m-2" placeholder="請輸入姓名">
                             <input type="text" class="w-50 form-control m-2" placeholder="請輸入地址">
                         </div>

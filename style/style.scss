@@ -591,15 +591,18 @@ nav a img {
         }
     }
 
-    .shop-card .img-box {
-        overflow: hidden;
+    .col-lg-4 {
         cursor: pointer;
+
         &:hover img {
             overflow: hidden;
             transform: scale(1.2);
             transition: all .4s ease;
-
         }
+    }
+
+    .shop-card .img-box {
+        overflow: hidden;
     }
 
     &::before {
