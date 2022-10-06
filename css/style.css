@@ -12847,10 +12847,14 @@ nav a img {
 }
 
 #news {
+  background-image: url("../image/n.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 #news h2:first-child, #news .h2:first-child {
-  color: #7AB3B7;
+  color: var(--primary);
 }
 #news h2:first-child::first-letter, #news .h2:first-child::first-letter {
   font-size: 1.6em;
@@ -12902,9 +12906,11 @@ nav a img {
 }
 #news .single-text {
   width: 100%;
-  display: block;
   padding: 1.6em;
+  display: block;
   color: #6b6b6b;
+  overflow: hidden;
+  background: #fff;
   border-radius: 15px;
   border: 2px solid var(--black-1);
 }
@@ -12958,6 +12964,9 @@ nav a img {
 #virus {
   position: relative;
 }
+#virus h2, #virus .h2 {
+  color: var(--primary);
+}
 #virus h2::first-letter, #virus .h2::first-letter {
   font-size: 1.6em;
 }
@@ -12965,24 +12974,50 @@ nav a img {
   content: "";
   position: absolute;
   top: 0;
-  right: 20%;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: rgba(221, 226, 150, 0.4392156863);
+  right: 0%;
+  width: 600px;
+  height: 600px;
+  clip-path: circle(50% at right);
   z-index: -1;
+  background: var(--black-1);
 }
 @media (max-width: 768px) {
   #virus::after {
     display: none;
   }
 }
+#virus::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 400px;
+  height: 400px;
+  clip-path: circle(50% at left);
+  background: var(--orange-1);
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  #virus::before {
+    display: none;
+  }
+}
 
 #shop {
+  color: var(--primary);
   position: relative;
 }
 #shop h2::first-letter, #shop .h2::first-letter {
   font-size: 1.6em;
+}
+#shop .shop-card .img-box {
+  overflow: hidden;
+  cursor: pointer;
+}
+#shop .shop-card .img-box:hover img {
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: all 0.4s ease;
 }
 #shop::before {
   content: "";

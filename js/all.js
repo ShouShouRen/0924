@@ -41,7 +41,7 @@ $(document).ready(function () {
                 $("#navtoggle").collapse('hide');
             });
         }
-        $(width).scroll(function () {
+        $(window).scroll(function () {
             $("#navtoggle").collapse('hide');
         })
     })

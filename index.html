@@ -200,8 +200,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div id="news" class="carousel slide carousel-fade overflow-hidden carousel-shadow"
-                            data-bs-ride="carousel">
+                        <div id="news"
+                            class="carousel slide carousel-fade overflow-hidden carousel-shadow wow fadeInRight"
+                            data-wow-duration="1.8s" data-bs-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <img src="image/N1.jpg" height="420" class="w-100 object-cover d-block"
@@ -279,13 +280,13 @@
             <div class="container">
                 <h2 class="text-center p-3 fw-bold">病毒資訊</h2>
                 <div class="row pt-4 justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 wow fadeInLeft" data-wow-duration="1.8s">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <h3 class="text-[1.4em]">病毒如何傳播？</h3>
+                                        <h4>病毒如何傳播？</h4>
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
@@ -303,7 +304,7 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <h3 class="text-[1.4em]">WH-78變異病毒在哪裡傳播？</h3>
+                                        <h4>WH-78變異病毒在哪裡傳播？</h4>
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -319,7 +320,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        <h3 class="text-[1.4em]">什麼是星狀病毒？</h3>
+                                        <h4>什麼是星狀病毒？</h4>
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
@@ -334,7 +335,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                        <h3 class="text-[1.4em]">感染 WH-78 病毒如何治療?</h3>
+                                        <h4>感染 WH-78 病毒如何治療?</h4>
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse"
@@ -346,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 wow fadeInRight" data-wow-duration="1.8s">
                         <img src="./image/chart.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -356,18 +357,18 @@
             <div class="container">
                 <h2 class="text-center h2 p-3 fw-bold text-mediun-green">防疫物資</h2>
                 <div class="row p-0">
-                    <div class="col-lg-4 col-md-6 col-12" v-for="product,idx in products">
+                    <div class="col-lg-4 col-md-6 col-12 shop-card" v-for="product,idx in products">
                         <div class="p-2">
                             <div class="rounded-2 shadow-lg">
                                 <div class="p-3">
-                                    <div class="relative">
-                                        <img :src="product.img" class="w-100 h-[260px] object-cover" alt="">
+                                    <div class="img-box">
+                                        <img :src="product.img" class="w-100 object-cover" alt="" height="260">
                                     </div>
                                     <div class="flex justify-content-between align-items-center pt-5">
                                         <h4 class="text-center text-[20px]">{{product.title}}</h4>
                                         <h5 class="text-danger">${{product.price}}</h5>
                                         <button class="btn btn-green-spical" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop" @click="plus(product)">加入購物車</button>
+                                            data-bs-target="#shopCart" @click="plus(product)">加入購物車</button>
                                     </div>
                                 </div>
                             </div>
@@ -461,14 +462,13 @@
             </div>
         </div>
         <!-- modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="shopCart"  data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="shopCartLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">購物車</h5>
+                        <h5 class="modal-title" id="shopCartLabel">購物車</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-sharp fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div class="modal-body">
