@@ -404,10 +404,13 @@ nav a img {
 }
 
 #news {
-    background-image: url('../image/n.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    .test{
+        position: absolute;
+        transform: rotate(180deg);
+        top: -0%;
+        z-index: -5;
+    }
     position: relative;
 
     h2:first-child {
@@ -425,12 +428,12 @@ nav a img {
     &::after {
         content: "";
         position: absolute;
-        top: 10px;
+        bottom: 5%;
         right: 0;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         clip-path: circle(50% at right);
-        background: var(--orange-1);
+        background: #fff;
         z-index: -1;
 
         @media (max-width: 768px) {
@@ -441,12 +444,12 @@ nav a img {
     &::before {
         content: "";
         position: absolute;
-        bottom: 0%;
+        top: 40%;
         left: -5%;
-        width: 250px;
-        height: 250px;
+        width: 360px;
+        height: 360px;
         border-radius: 50%;
-        background: var(--blue-1);
+        background: #ffffff;
         z-index: -1;
 
         @media (max-width: 768px) {
@@ -474,7 +477,6 @@ nav a img {
         overflow: hidden;
         background: #fff;
         border-radius: 15px;
-        border: 2px solid var(--black-1);
 
         h2 {
             padding: 0.3em;
@@ -522,9 +524,8 @@ nav a img {
 
     .carousel-shadow {
         border-radius: 15px;
-        background: #e0e0e0;
-        box-shadow: 20px 20px 60px #bebebe,
-            -20px -20px 60px #ffffff;
+        box-shadow: 20px 20px 60px var(--purple-1),
+            -20px -20px 60px var(--blue-1);
     }
 
     .news-title.animated {
@@ -546,39 +547,6 @@ nav a img {
         }
     }
 
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0%;
-        width: 600px;
-        height: 600px;
-        clip-path: circle(50% at right);
-        z-index: -1;
-        background: var(--black-1);
-
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        width: 400px;
-        height: 400px;
-        clip-path: circle(50% at left);
-        background: var(--orange-1);
-        z-index: -1;
-
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
 }
 
 #shop {
@@ -603,21 +571,6 @@ nav a img {
 
     .shop-card .img-box {
         overflow: hidden;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        width: 450px;
-        height: 450px;
-        background: #7AB3B770;
-        clip-path: circle(50% at left);
-
-        @media (max-width: 768px) {
-            display: none;
-        }
     }
 }
 
