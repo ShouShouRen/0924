@@ -358,7 +358,7 @@
             <div class="container">
                 <h2 class="text-center h2 p-3 fw-bold text-mediun-green">防疫物資</h2>
                 <div class="row p-0">
-                    <div class="col-lg-4 col-md-6 col-12 shop-card" v-for="product,idx in products">
+                    <div class="col-lg-4 col-md-6 col-12" v-for="product,idx in products">
                         <div class="p-2">
                             <div class="rounded-2 shadow-lg">
                                 <div class="p-3">
@@ -368,7 +368,7 @@
                                     <div class="d-flex justify-content-between align-items-center pt-5">
                                         <h4 class="text-center text-[20px]">{{product.title}}</h4>
                                         <h5 class="text-danger">${{product.price}}</h5>
-                                        <button class="btn btn-green-spical" data-bs-toggle="modal"
+                                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
                                             data-bs-target="#shopCart" @click="plus(product)">加入購物車</button>
                                     </div>
                                 </div>
@@ -463,8 +463,8 @@
             </div>
         </div>
         <!-- modal -->
-        <div class="modal fade" id="shopCart"  data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="shopCartLabel" aria-hidden="true">
+        <div class="modal fade" id="shopCart" data-bs-keyboard="false" tabindex="-1" aria-labelledby="shopCartLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -475,19 +475,19 @@
                     <div class="modal-body">
                         <div class="d-flex">
                             <div class="col-4">
-                                <h3 class="p-2">品名</h3>
+                                <h4 class="p-2">品名</h4>
                             </div>
                             <div class="col-4">
-                                <h3 class="p-2">金額</h3>
+                                <h4 class="p-2">金額</h4>
                             </div>
                             <div class="col-4">
-                                <h3 class="p-2">數量</h3>
+                                <h4 class="p-2">數量</h4>
                             </div>
                         </div>
                         <hr>
                         <template v-for="product,idx in products">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="py-2">{{product.title}}</h3>
+                                <h5 class="py-2">{{product.title}}</h5>
                                 <div class="d-flex justify-content-around align-items-center text-[20px]">
                                     <span>{{sub[idx]}}元</span>
                                     <i class="fa-solid fa-circle-minus cursor-pointer text-dark-green"
