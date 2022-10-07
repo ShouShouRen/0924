@@ -141,9 +141,11 @@ li {
     height: 100%;
     background-color: rgba(0, 0, 0, .2);
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
+
 nav a img {
     height: 60px;
 }
@@ -407,12 +409,13 @@ nav a img {
 
 #news {
 
-    .test{
+    .test {
         position: absolute;
         transform: rotate(180deg);
         top: -0%;
         z-index: -5;
     }
+
     position: relative;
 
     h2:first-child {
@@ -561,14 +564,14 @@ nav a img {
         }
     }
 
-    .img-box{
+    .img-box {
         overflow: hidden;
         cursor: pointer;
 
         &:hover img {
             overflow: hidden;
-            transform: scale(1.3);
-            transition: all .6s ease;
+            transform: scale(1.1);
+            transition: all 600ms ease;
         }
     }
 
@@ -577,7 +580,7 @@ nav a img {
 #chat {
     width: 300px;
     height: 400px;
-    background-color: #ccc;
+    background: #C7C7C7;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -589,30 +592,25 @@ nav a img {
     right: 70px;
     display: none;
     z-index: 10000;
+    font-size: 14px;
+
 }
 
 .input {
     padding: 5px;
     margin-bottom: 15px;
-
-    &::after {
-        content: "我";
-        text-align: center;
-        padding: 2px;
-        display: inline-block;
-        color: #fff;
-        background-color: #000;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+    .p-2{
+        background-color: #eee;
+        border-radius: 15px;
     }
 }
 
 .reply {
-    padding: 5px;
-    margin-bottom: 15px;
+    padding: 10px;
     animation: delay 0s 500ms forwards;
     opacity: 0;
+    background-color: #eee;
+    border-radius: 15px;
 }
 
 @keyframes delay {
@@ -623,8 +621,17 @@ nav a img {
 
 .chat-box {
     overflow-y: scroll;
-    background-color: #fefeff;
+    background-color: #fff;
     height: 90%;
+    .chat-round{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #0987;
+        color: #fff;
+        display: grid;
+        place-items: center;
+    }
 }
 
 .chat-ico {

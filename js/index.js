@@ -50,6 +50,7 @@ Vue.createApp({
         addInput() {
             this.input.push(this.chat)
             this.chat = '';
+            
         },
         h() {
             this.$refs.chat.scrollTop = this.$refs.chat.scrollHeight + 100
