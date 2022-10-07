@@ -108,6 +108,10 @@ section {
     padding-top: 70px;
     padding-bottom: 70px;
     height: 100vh;
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 ul,
@@ -142,6 +146,9 @@ li {
     background-color: rgba(0, 0, 0, .2);
 }
 
+.rounded-circle{
+    border-radius: 50%;
+}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -558,6 +565,12 @@ nav a img {
     color: var(--primary);
     position: relative;
 
+    .test-2 {
+        position: absolute;
+        transform: rotate(180deg);
+        top: -0%;
+        z-index: -5;
+    }
     h2 {
         &::first-letter {
             font-size: 1.6em;
@@ -574,8 +587,8 @@ nav a img {
             transition: all 600ms ease;
         }
     }
-
 }
+
 
 #chat {
     width: 300px;
