@@ -387,7 +387,8 @@
                 <div class="row pt-5">
                     <div class="col-lg-6 col-12">
                         <div class="p-3">
-                            <p class="text-black-2">提供一個好的防疫平台是疫世界得初衷，歡迎關注以下疫世界官方帳號，我們會不定時更新防疫內容及資訊，也歡迎利用右方聯絡平台來聯絡我們讓我們。</p>
+                            <p class="text-black-2">提供一個好的防疫平台是疫世界得初衷，歡迎關注以下疫世界官方帳號，我們會不定時更新防疫內容及資訊，也歡迎利用右方聯絡平台來聯絡我們讓我們。
+                            </p>
                         </div>
                         <div class="p-3 pt-5">
                             <div class="d-flex justify-content-start align-items-center py-4">
@@ -406,7 +407,7 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <form class="rounded-3 shadow-lg bg-white">
-                            <div class="p-5">
+                            <div class="p-5 pb-0">
                                 <h3>想跟疫世界說:</h3>
                                 <h4 class="form-title">姓名</h4>
                                 <input type="text" class="form-control" required>
@@ -414,6 +415,11 @@
                                 <input type="email" class="form-control" required>
                                 <h4 class="form-title">留言</h4>
                                 <textarea class="form-control"></textarea>
+                                <div class="d-flex justify-content-evenly align-items-center py-3">
+                                    <button type="submit" class="btn btn-outline-primary"
+                                        onclick="alert('已送至疫世界，克服會盡速回復您!')">送出</button>
+                                    <button type="reset" class="btn btn-outline-primary">重設</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -513,11 +519,13 @@
                                 </div>
                             </div>
                         </template>
-                        <div class="d-flex p-2">
-                            <input type="text" class="w-50 form-control m-2" placeholder="請輸入姓名">
-                            <input type="text" class="w-50 form-control m-2" placeholder="請輸入地址">
-                        </div>
-                        <div class="text-right text-danger">總共{{total}}元</div>
+                        <h5>姓名:</h5>
+                        <form>
+                            <input type="text" class="w-75 form-control m-2" required>
+                            <h5>地址:</h5>
+                            <input type="text" class="w-75 form-control m-2" required>
+                            <div class="text-right text-danger">總共{{total}}元</div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <div>
