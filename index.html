@@ -355,7 +355,7 @@
             </div>
         </section>
         <section id="shop">
-            <img src="./image/test-2.png" class="img-fluid test-2" alt="">
+            <img src="./image/test-2.png" class="w-100 test-2" alt="">
             <div class="container">
                 <h2 class="text-center h2 p-3 fw-bold text-mediun-green">防疫物資</h2>
                 <div class="row">
@@ -383,50 +383,46 @@
         </section>
         <section id="contact">
             <div class="container">
-                <h2 class="text-center h2 p-3 fw-bold text-mediun-green">聯絡我們</h2>
-                <div class="row align-items-center">
-                    <div class="row  pt-[100px] text-white">
-                        <div class="col-lg-6 pt-3">
-                            <div class="d-flex justify-content-evenly align-items-center">
-                                <label for="name" class="text-[22px]">
-                                    姓名:
-                                </label>
-                                <input type="text" id="name" class="form-control rounded-pill w-50 h-[50px]"
-                                    placeholder="請輸入姓名">
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center pt-[60px]">
-                                <label for="name" class="text-[22px]">
-                                    手機:
-                                </label>
-                                <input type="tel" id="name" class="form-control rounded-pill w-50 h-[50px]"
-                                    placeholder="請輸入手機">
-                            </div>
-                            <div class="d-flex justify-content-evenly align-items-center pt-[60px]">
-                                <label for="name" class="text-[22px]">
-                                    Mail:
-                                </label>
-                                <input type="email" id="name" class="form-control rounded-pill w-50 h-[50px]"
-                                    placeholder="請輸入E-mail">
-                            </div>
+                <h2 class="text-start p-3 fw-bold">聯絡我們</h2>
+                <div class="row pt-5">
+                    <div class="col-lg-6 col-12">
+                        <div class="p-3">
+                            <p class="text-black-2">提供一個好的防疫平台是疫世界得初衷，歡迎關注以下疫世界官方帳號，我們會不定時更新防疫內容及資訊，也歡迎利用右方聯絡平台來聯絡我們讓我們。</p>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex justify-content-evenly align-items-start pt-3">
-                                <label for="text" class="text-[22px]">
-                                    留言:
-                                </label>
-                                <textarea id="text"
-                                    class="w-[250px] h-[200px] lg:w-[500px] lg:h-[300px] form-control rounded-4 p-3"
-                                    placeholder="請輸入您的留言"></textarea>
+                        <div class="p-3 pt-5">
+                            <div class="d-flex justify-content-start align-items-center py-4">
+                                <i class="fa-regular fa-envelope fa-2xl"></i>
+                                <h4 class="ps-5">yisuijei@gmail.com</h4>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center py-4">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                                <h4 class="ps-5">yisuijei</h4>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center py-4">
+                                <i class="fa-brands fa-facebook fa-2xl"></i>
+                                <h4 class="ps-5">疫世界防疫中心</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center mt-5">
-                        <button class="btn btn-lg px-5 btn-outline-primary rounded-pill submit" data-bs-toggle="modal"
-                            data-bs-target="#submit">送出留言</button>
+                    <div class="col-lg-6 col-12">
+                        <form class="rounded-3 shadow-lg bg-white">
+                            <div class="p-5">
+                                <h3>想跟疫世界說:</h3>
+                                <h4 class="form-title">姓名</h4>
+                                <input type="text" class="form-control" required>
+                                <h4 class="form-title">信箱</h4>
+                                <input type="email" class="form-control" required>
+                                <h4 class="form-title">留言</h4>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+        <footer class="bg-purple-2">
+            <p class="footer-text">本網站使用 CSS + jQuery 製作，響應 設計 &copy; 2021 - 疫世界</p>
+        </footer>
         <div class="chat-ico">
             <i class="fa-solid fa-comment-dots"></i>
         </div>
@@ -480,7 +476,7 @@
                 </div>
             </div>
         </div>
-            <i class="fa fa-angle-up fa-2x gotop cursor-pointer" id="gotop"></i>
+        <i class="fa fa-angle-up fa-2x gotop cursor-pointer" id="gotop"></i>
         <!-- modal -->
         <div class="modal fade" id="shopCart" data-bs-keyboard="false" tabindex="-1" aria-labelledby="shopCartLabel"
             aria-hidden="true">

@@ -687,3 +687,39 @@ nav a img {
 #gotop :hover {
     background: #0099CC;
 }
+
+#contact {
+    height: 80vh;
+
+    h2 {
+        color: var(--primary);
+
+        &::first-letter {
+            font-size: 1.6em;
+        }
+    }
+
+    h3 {
+        color: var(--black-3);
+        font-weight: bold;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .form-title {
+        color: var(--orange-3);
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+footer {
+    height: 20vh;
+
+    .footer-text {
+        display: grid;
+        place-items: center;
+        padding-top: 4em;
+        color: #fff;
+    }
+}
