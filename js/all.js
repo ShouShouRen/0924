@@ -45,17 +45,13 @@ $(document).ready(function () {
             $("#navtoggle").collapse('hide');
         })
     })
-    $(function () {
-        $('#gotop').click(function () {
-            $('html,body').animate({ scrollTop: 0 }, 'slow');
-            return false;
-        });
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 400) {
-                $('#gotop').fadeIn();
-            } else {
-                $('#gotop').fadeOut();
-            }
-        });
+    $(".gotop").click(function (e) {
+        e.preventDefault();
+        $("html,body").animate(
+            {
+                scrollTop: 0,
+            },
+            600
+        );
     });
 });
