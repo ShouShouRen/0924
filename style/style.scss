@@ -108,6 +108,7 @@ section {
     padding-top: 70px;
     padding-bottom: 70px;
     height: 100vh;
+
     @media (max-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -146,9 +147,10 @@ li {
     background-color: rgba(0, 0, 0, .2);
 }
 
-.rounded-circle{
+.rounded-circle {
     border-radius: 50%;
 }
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -571,6 +573,7 @@ nav a img {
         top: -0%;
         z-index: -5;
     }
+
     h2 {
         &::first-letter {
             font-size: 1.6em;
@@ -612,7 +615,8 @@ nav a img {
 .input {
     padding: 5px;
     margin-bottom: 15px;
-    .p-2{
+
+    .p-2 {
         background-color: #eee;
         border-radius: 15px;
     }
@@ -636,7 +640,8 @@ nav a img {
     overflow-y: scroll;
     background-color: #fff;
     height: 90%;
-    .chat-round{
+
+    .chat-round {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -652,9 +657,8 @@ nav a img {
     height: 70px;
     border-radius: 50%;
     background-color: #7AB3B7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     font-size: 2em;
     color: #fff;
     position: fixed;
@@ -662,4 +666,24 @@ nav a img {
     right: 30px;
     cursor: pointer;
     z-index: 10000;
+}
+
+#gotop {
+    position: fixed;
+    z-index: 90;
+    right: 30px;
+    bottom: 90px;
+    display: none;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background: var(--primary);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#gotop :hover {
+    background: #0099CC;
 }

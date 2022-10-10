@@ -13065,9 +13065,8 @@ nav a img {
   height: 70px;
   border-radius: 50%;
   background-color: #7AB3B7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-size: 2em;
   color: #fff;
   position: fixed;
@@ -13075,4 +13074,24 @@ nav a img {
   right: 30px;
   cursor: pointer;
   z-index: 10000;
+}
+
+#gotop {
+  position: fixed;
+  z-index: 90;
+  right: 30px;
+  bottom: 90px;
+  display: none;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: var(--primary);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#gotop :hover {
+  background: #0099CC;
 }/*# sourceMappingURL=style.css.map */
