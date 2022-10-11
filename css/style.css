@@ -13108,13 +13108,13 @@ nav a img {
 #contact h3, #contact .h3 {
   color: var(--black-3);
   font-weight: bold;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 #contact .form-title {
   color: var(--orange-3);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 
 footer {
