@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     $('.nav-link,a').click(function () {
         var t = $(this).attr('href');
-        var st = $(t).offset().top - 30;
+        var st = $(t).offset().top - 10;
         $('html,body').animate({
             scrollTop: st
         }, 500);
