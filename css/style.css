@@ -13081,7 +13081,6 @@ nav a img {
   z-index: 90;
   right: 30px;
   bottom: 90px;
-  display: none;
   width: 70px;
   height: 70px;
   color: #fff;
@@ -13090,14 +13089,15 @@ nav a img {
   place-items: center;
   border-radius: 50%;
   transition: all 0.5s;
+  transform: translateX(200%) rotate(180deg);
+  transition: 0.4s;
 }
-
-#gotop :hover {
-  background: #0099CC;
+#gotop.active {
+  transform: translateX(0) rotate(0);
 }
 
 #contact {
-  height: 80vh;
+  height: 100vh;
 }
 #contact h2, #contact .h2 {
   color: var(--primary);
@@ -13118,11 +13118,11 @@ nav a img {
 }
 
 footer {
-  height: 20vh;
+  height: 10vh;
 }
 footer .footer-text {
   display: grid;
   place-items: center;
-  padding-top: 6em;
+  padding-top: 3vh;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */

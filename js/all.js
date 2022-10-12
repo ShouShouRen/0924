@@ -21,13 +21,16 @@ $(document).ready(function () {
         })
     };
 
-    $('.nav-link,a').click(function () {
-        var t = $(this).attr('href');
-        var st = $(t).offset().top - 10;
+    $('nav').find('a').click(function(){
+        console.log($('nav').find('a'));
+        console.log($(this).data('target'))
+        let target = $(this).data('target');
+        let o = $(target).offset().top;
+        console.log(o);
         $('html,body').animate({
-            scrollTop: st
-        }, 500);
-    });
+          scrollTop: o
+        });
+      })
     $('.modal-footer .clearcart').click(function () {
         alert("感謝您的購買疫世界會儘速送達！！！")
         location.reload();
@@ -54,4 +57,13 @@ $(document).ready(function () {
             600
         );
     });
+    $(window).scroll(function(e){
+        let h = $(window).scrollTop();
+        if(h>650){
+          $('.gotop').addClass('active');
+        }else{
+            $('.gotop').removeClass('active');
+        //   $('.gotop').fadeOut();
+        }
+      })
 });
