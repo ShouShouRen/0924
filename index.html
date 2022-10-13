@@ -434,7 +434,7 @@
             <i class="fa-solid fa-comment-dots"></i>
         </div>
         <div id="chat">
-            <h4>疫世界機器人</h4>
+            <h4>疫世界機器人 <i class="fa-sharp fa-solid fa-circle-xmark"></i></h4>
             <div class="chat-box" ref="chat">
                 <div class="d-flex align-items-center p-2">
                     <div class="chat-round me-2">
@@ -463,8 +463,8 @@
             </div>
             <div class="d-flex justify-content-between my-2">
                 <input type="text" class="form-control w-75" v-model="chat" @keyup.prevent.enter="go()"
-                    placeholder="請書入您的問題">
-                <input type="submit" class="btn btn-blue-2" value="送出" @click.prevent="go()">
+                    placeholder="請輸入您的問題">
+                <input type="submit" class="btn btn-blue-4" value="送出" @click.prevent="go()">
             </div>
         </div>
         <!-- modal -->

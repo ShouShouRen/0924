@@ -596,7 +596,7 @@ nav a img {
 #chat {
     width: 300px;
     height: 400px;
-    background: var(--orange-3);
+    background: var(--blue-1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -611,10 +611,16 @@ nav a img {
     z-index: 10000;
     font-size: 14px;
     h4{
-        color: #fff;
+        color: var(--black-3);
         font-weight: bold;
         padding-top: 16px;
         padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+            color: var(--orange-4);
+        }
     }
 }
 
