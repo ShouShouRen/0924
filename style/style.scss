@@ -596,12 +596,13 @@ nav a img {
 #chat {
     width: 300px;
     height: 400px;
-    background: #C7C7C7;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
     padding: 30px;
+    padding-top: 0;
     overflow: hidden;
     position: fixed;
     bottom: 90px;
@@ -639,7 +640,7 @@ nav a img {
 .chat-box {
     overflow-y: scroll;
     background-color: #fff;
-    height: 90%;
+    height: 80%;
 
     .chat-round {
         width: 40px;
