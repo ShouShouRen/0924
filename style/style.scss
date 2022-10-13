@@ -596,12 +596,12 @@ nav a img {
 #chat {
     width: 300px;
     height: 400px;
-    background: #fff;
+    background: var(--purple-3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
-    padding: 30px;
+    padding: 10px;
     padding-top: 0;
     overflow: hidden;
     position: fixed;
@@ -610,7 +610,12 @@ nav a img {
     display: none;
     z-index: 10000;
     font-size: 14px;
-
+    h4{
+        color: #fff;
+        font-weight: bold;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .input {
@@ -640,7 +645,7 @@ nav a img {
 .chat-box {
     overflow-y: scroll;
     background-color: #fff;
-    height: 80%;
+    height: 70%;
 
     .chat-round {
         width: 40px;
