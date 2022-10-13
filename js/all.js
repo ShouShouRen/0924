@@ -35,7 +35,7 @@ $(document).ready(function () {
         alert("感謝您的購買疫世界會儘速送達！！！")
         location.reload();
     })
-    $('.chat-ico').click(function () {
+    $('.chat-ico,.fa-circle-xmark').click(function () {
         $('#chat').fadeToggle();
     })
     $(window).scroll(function () {

@@ -13033,7 +13033,8 @@ nav a img {
   align-items: center;
 }
 #chat h4 i, #chat .h4 i {
-  color: var(--orange-4);
+  color: var(--blue-4);
+  cursor: pointer;
 }
 
 .input {
